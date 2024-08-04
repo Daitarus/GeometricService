@@ -2,7 +2,7 @@
 {
     public class Rectangle
     {
-        private double _height = 0;
+        private double _height;
         public double Height
         {
             get { return _height; }
@@ -14,7 +14,7 @@
             }
         }
 
-        private double _width = 0;
+        private double _width;
         public double Width
         {
             get { return _width; }
@@ -24,6 +24,12 @@
 
                 _width = value;
             }
+        }
+
+        public Rectangle(double height, double wigth)
+        {
+            Height = height;
+            Width = wigth;
         }
     }
 }

@@ -2,9 +2,9 @@
 {
     public class Triangle
     {
-        private double _side1 = 0;
-        private double _side2 = 0;
-        private double _side3 = 0;
+        private double _side1;
+        private double _side2;
+        private double _side3;
 
         public double Side1 
         { 
@@ -37,6 +37,13 @@
 
                 _side2 = value;
             }
+        }
+
+        public Triangle(double side1, double side2, double side3)
+        {
+            Side1 = side1;
+            Side2 = side2;
+            Side3 = side3;
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class Circle
     {
-        private double _radius = 0;
+        private double _radius;
         public double Radius 
         { 
             get {  return _radius; }
@@ -12,6 +12,11 @@
 
                 _radius = value;
             }
+        }
+
+        public Circle(double radius)
+        {
+            Radius = radius;
         }
     }
 }
