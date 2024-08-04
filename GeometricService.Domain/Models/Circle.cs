@@ -1,6 +1,8 @@
-﻿namespace GeometricService.Domain.Models
+﻿using GeometricService.Domain.Models.Abstracts;
+
+namespace GeometricService.Domain.Models
 {
-    public class Circle
+    public class Circle : Figure
     {
         private double _radius;
         public double Radius 
@@ -17,6 +19,11 @@
         public Circle(double radius)
         {
             Radius = radius;
+        }
+
+        public override double CalculateArea()
+        {
+            return Math.PI * Math.Pow(_radius, 2);
         }
     }
 }

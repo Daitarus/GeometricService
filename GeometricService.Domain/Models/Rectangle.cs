@@ -1,6 +1,8 @@
-﻿namespace GeometricService.Domain.Models
+﻿using GeometricService.Domain.Models.Abstracts;
+
+namespace GeometricService.Domain.Models
 {
-    public class Rectangle
+    public class Rectangle : Figure
     {
         private double _height;
         public double Height
@@ -30,6 +32,11 @@
         {
             Height = height;
             Width = wigth;
+        }
+
+        public override double CalculateArea()
+        {
+            return _height * _width;
         }
     }
 }
